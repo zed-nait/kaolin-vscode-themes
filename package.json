@@ -1,0 +1,49 @@
+{
+  "name": "kaolin-vscode-themes",
+  "displayName": "Kaolin Themes",
+  "description": "Kaolin-inspiried themes for VS Code/Codium",
+  "version": "0.1.0",
+  "license": "GPL-3.0",
+  "publisher": "zed-nait",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zed-nait/kaolin-vscode-themes"
+  },
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "light theme",
+    "dark theme"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Kaolin Light",
+        "uiTheme": "vs",
+        "path": "./themes/light-color-theme.json"
+      },
+      {
+        "label": "Kaolin Light (alt)",
+        "uiTheme": "vs",
+        "path": "./themes/light-alt-color-theme.json"
+      }
+    ]
+  },
+  "icon": "images/logo.png",
+  "scripts": {
+    "watch": "nodemon --watch src src/index.js",
+    "build": "node src/index.js",
+    "package": "yarn build && mkdir -p build && vsce package --yarn -o ./build/kaolin-vscode-theme.vsix",
+    "showcase": "node src/showcase.js",
+    "vscode:prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "vsce": "^2.10.0"
+  }
+}

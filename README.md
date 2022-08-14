@@ -2,7 +2,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
-![Preview](https://raw.githubusercontent.com/zed-nait/kaolin-vscode-themes/images/preview.png)
+![Preview](https://raw.githubusercontent.com/zed-nait/kaolin-vscode-themes/master/images/preview.png)
 
 ## Installation
 
